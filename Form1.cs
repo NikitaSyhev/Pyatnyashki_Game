@@ -125,7 +125,16 @@ namespace Pyatnyashki
                     B[nBottom].Text = B[numberClick].Text;
                 }
             }
-
+            if (B[0].Text == B[0].Tag.ToString() &&
+                B[1].Text == B[1].Tag.ToString() && B[2].Text == B[2].Tag.ToString() && 
+                B[3].Text == B[3].Tag.ToString() && B[4].Text == B[4].Tag.ToString() && B[5].Text == B[5].Tag.ToString() && 
+                B[6].Text == B[6].Tag.ToString() && B[7].Text == B[7].Tag.ToString() && B[8].Text == B[8].Tag.ToString() && 
+                B[9].Text == B[9].Tag.ToString() && B[10].Text == B[10].Tag.ToString() && B[11].Text == B[11].Tag.ToString() && 
+                B[12].Text == B[12].Tag.ToString() && B[13].Text == B[13].Tag.ToString() && B[14].Text == B[14].Tag.ToString() && 
+                B[15].Text == B[15].Tag.ToString()   )
+            {
+                MessageBox.Show("You Win");
+            }
 
 
 
