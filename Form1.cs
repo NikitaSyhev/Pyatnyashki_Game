@@ -33,7 +33,7 @@ namespace Pyatnyashki
             B[13] = button14;
             B[14] = button15;
             B[15] = button16;
-          shuffle_button();
+         shuffle_button();
             panel1_Resize(null,null);
           
 
@@ -41,9 +41,9 @@ namespace Pyatnyashki
         private void shuffle_button()
         {
             Random random = new Random();
-            for (int i = 0; i < B.Length; i++)
+            for (int i = 0; i < B.Length -1 ; i++)
              {
-                int randomIndex = random.Next(B.Length);
+                int randomIndex = random.Next(B.Length - 1);
                 string temp = B[i].Text;  
                 B[i].Text = B[randomIndex].Text;
                 B[randomIndex].Text = temp;
